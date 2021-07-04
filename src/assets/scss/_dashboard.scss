@@ -1,0 +1,81 @@
+.dashboard {
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: calc(100% - 85px);
+  align-items: center;
+  padding: 10px auto;
+  transition: all 0.3s ease;
+
+  .dashboard__container {
+    padding: 6px 12px;
+
+    .grid__card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
+      height: 220px;
+      color: #121;
+      border-radius: 6px;
+      background-color: #fff;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      transition: transform 450ms;
+      overflow-y: hidden;
+
+      &:hover {
+        transform: scale(1.09);
+        border-radius: 10px;
+      }
+
+      .card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* .arrow__right {
+          position: absolute;
+          right: 0;
+        } */
+        .uil {
+          font-size: 2rem;
+          color: $first-color-second;
+        }
+        .card__title {
+          font-size: $h1-font-size;
+          font-weight: $font-medium;
+          color: $title-color;
+        }
+        .card__subtitle {
+          font-size: $h3-font-size;
+          color: $text-color-light;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dashboard {
+    .dashboard__container {
+      left: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-left: 270px;
+      margin-top: 50px;
+
+      &.grid {
+        grid-template-columns: repeat(1, minmax(230px, 1fr));
+        gap: 45px;
+      }
+      .grid__card {
+        width: 250px;
+        height: 200px;
+      }
+    }
+  }
+}

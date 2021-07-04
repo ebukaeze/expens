@@ -1,0 +1,20 @@
+.expense {
+  width: 100%;
+  //width: calc(100% - 85px);
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 900px) {
+  .expense {
+    width: calc(100% - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
