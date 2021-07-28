@@ -9,23 +9,16 @@ import useStyles from './styles';
 
 const List = () => {
     const classes = useStyles();
-    const globalState = useContext(ExpenseTrackerContext);
+    const { deleteTransaction, transactions } = useContext(ExpenseTrackerContext);
 
 
    
 
-    const transactions = [
-        { id: 1, type: "Income", category: "Salary", amount: "50", date: "30 Jun 2021"},
-        { id: 2, type: "Expense", category: "Rent", amount: "200", date: "30 Jun 2021"},
-        { id: 3, type: "Income", category: "Salary", amount: "50", date: "30 Jun 2021"},
-        { id: 4, type: "Expense", category: "Rent", amount: "200", date: "30 Jun 2021"},
-        { id: 5, type: "Income", category: "Salary", amount: "50", date: "30 Jun 2021"}
-
-
-    ];
+   
     return (
         <MUIList dense={false} className={classes.list}>
-            {transactions.map((transaction) =>(
+            {transactions && transactions.map((transaction) =>{
+                return(
               <Slide direction="down" in mountOnEnter unmountOnExit key={transaction.id}>
                  <ListItem>
                      <ListItemAvatar>
@@ -37,13 +30,14 @@ const List = () => {
 
                      </ListItemText>
                      <ListItemSecondaryAction>
-                         <IconButton edge="end" aria-label="delete" onClick="">
+                         <IconButton edge="end" aria-label="delete" onClick={() => deleteTransaction(transaction.id)}>
                              <Delete />
                          </IconButton>
                      </ListItemSecondaryAction>
                  </ListItem>
               </Slide>
-            ))}
+                )
+            })}
         </MUIList>
     )
 }
