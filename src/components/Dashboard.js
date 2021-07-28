@@ -1,10 +1,25 @@
 import React from 'react';
+import { Grid, AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import  MenuIcon  from '@material-ui/icons/Menu';
+import IconButton from '@material-ui/core/IconButton';
 import * as Unicons from "@iconscout/react-unicons";
 import { Link } from "react-router-dom";
+import useStyle from './styles';
 
 
 function Dashboard() {
+    const classes = useStyle();
     return (
+        <>
+           <AppBar position="static" className={classes.appheader} style={{background : "#6757e0"}}>
+  <Toolbar>
+   
+    <Typography variant="h6" edge="end"className={classes.title}>
+      Expens
+    </Typography>
+    
+  </Toolbar>
+</AppBar>
         <section className="dashboard">
             <div className="dashboard__container grid">
                 <Link to="/expense" className="grid__card">
@@ -30,6 +45,7 @@ function Dashboard() {
             </div>
             
         </section >
+        </>
     )
 }
 

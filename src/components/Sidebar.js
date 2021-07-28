@@ -19,7 +19,12 @@ function Sidebar() {
                 
                 <i className="menu__icon" onClick={handleClick}>
                    { click ? <Unicons.UilApps /> : <Unicons.UilTimes />}</i>
+                   
+                   <i className="menu__icon2" onClick={handleClick}>
+                   { click ? <Unicons.UilBars /> : <Unicons.UilTimes />}</i>
+
                </div>
+               
 
                <ul className="nav__list">
                    <li className="nav__item">
