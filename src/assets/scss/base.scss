@@ -35,4 +35,7 @@ body {
   .sidebar.active ~ .dashboard {
     width: calc(100% - 55%);
   }
+  // .sidebar.active ~ .expense {
+  //   width: calc(100% - 55%);
+  // }
 }
