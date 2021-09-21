@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  width: calc(100% - 85px);
+  width: calc(100% - 5px);
   align-items: center;
   padding: 10px auto;
   transition: all 0.3s ease;
@@ -60,6 +60,7 @@
 
 @media screen and (max-width: 900px) {
   .dashboard {
+    width: calc(100% - 305px);
     .dashboard__container {
       left: 100px;
       display: flex;

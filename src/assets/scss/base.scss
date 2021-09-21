@@ -11,7 +11,7 @@
 }
 body {
   position: relative;
-  min-height: 100vh;
+  //min-height: 100vh;
   width: 100%;
   overflow: hidden;
 }
@@ -28,12 +28,12 @@ body {
   grid-auto-rows: 1fr;
 }
 .sidebar.active ~ .dashboard {
-  width: calc(100% - 35%);
+  width: calc(100% - 5%);
 }
 
 @media screen and (max-width: 900px) {
   .sidebar.active ~ .dashboard {
-    width: calc(100% - 55%);
+    width: calc(100% - 52%);
   }
   // .sidebar.active ~ .expense {
   //   width: calc(100% - 55%);
