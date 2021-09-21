@@ -21,7 +21,7 @@ function Sidebar() {
                    { click ? <Unicons.UilApps /> : <Unicons.UilTimes />}</i>
                    
                    <i className="menu__icon2" onClick={handleClick}>
-                   { click ? <Unicons.UilBars /> : <Unicons.UilTimes />}</i>
+                   { click ? <Unicons.UilTimes color="#000"/> :  <Unicons.UilBars color="#000"/>}</i>
 
                </div>
                

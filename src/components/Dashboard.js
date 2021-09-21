@@ -14,7 +14,7 @@ function Dashboard() {
            <AppBar position="static" className={classes.appheader} style={{background : "#6757e0"}}>
   <Toolbar>
    
-    <Typography variant="h6" edge="end"className={classes.title}>
+    <Typography variant="h6" edge="center"className={classes.title}>
       Expens
     </Typography>
     
@@ -37,6 +37,15 @@ function Dashboard() {
                     <div className="card__content">
                         <i className="uil track__icon"><Unicons.UilAnalysis size="100"/></i>
                         <h2 className="card__tilte">Track Income</h2>
+                        <div>
+                        <h3 className="card__subtitle">Follow up with the analysis</h3>
+                        </div>
+                    </div>
+                </Link>
+                 <Link to="/income" className="grid__card">
+                    <div className="card__content">
+                        <i className="uil track__icon"><Unicons.UilAnalysis size="100"/></i>
+                        <h2 className="card__tilte">Analytics</h2>
                         <div>
                         <h3 className="card__subtitle">Follow up with the analysis</h3>
                         </div>
