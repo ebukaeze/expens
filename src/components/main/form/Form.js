@@ -41,7 +41,7 @@ console.log(createTransaction);
             <Grid item xs={6}>
                 <FormControl className={classes.form} fullwidth="true" >
                     <InputLabel > Type </InputLabel>
-                    <Select value={setFormData.type} onChange={(e) => setFormData({...formData, type: e.target.value})}>
+                    <Select value={setFormData.type || formData.type} onChange={(e) => setFormData({...formData, type: e.target.value})}>
                         <MenuItem value="Income">Income</MenuItem>
                         <MenuItem value="Expense">Expense</MenuItem>
 
@@ -54,7 +54,7 @@ console.log(createTransaction);
             <Grid item xs={6}>
                 <FormControl className={classes.form} fullwidth="true" >
                     <InputLabel >Category  </InputLabel>
-                    <Select value={setFormData.category} onChange={(e) => setFormData({...formData, category: e.target.value})}>
+                    <Select value={formData.category} onChange={(e) => setFormData({...formData, category: e.target.value})}>
                         <MenuItem value="Business">Business</MenuItem>
                         <MenuItem value="Salary">Salary</MenuItem>
 
@@ -63,9 +63,11 @@ console.log(createTransaction);
                 </FormControl>
                 
             </Grid>
-            <Grid item xs={12} className={classes.form} fullwidth="true">
-                <TextField type="number" label="Amount" value={setFormData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})}/>
-                <TextField type="date" label="Date" className={classes.date} value={setFormData.date} onChange={(e) => setFormData({...formData, date: e.target.value})}/>
+            <Grid item xs={6} className={classes.form} fullwidth="true">
+                <TextField type="number" label="Amount" className={classes.amount} value={formData.amount} onChange={(e) => setFormData({...formData, amount: e.target.value})}/>
+            </Grid>
+            <Grid item xs={6} className={classes.form} fullwidth="true">
+                <TextField type="date" label="Date" className={classes.date} value={formData.date} onChange={(e) => setFormData({...formData, date: e.target.value})}/>
             </Grid>
             <Button className={classes.button} variant="outlined" color="primary" onClick={createTransaction}>Create</Button>
         </Grid>
