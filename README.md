@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Expens
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## _A voice automated web app which helps to track and analyze income and expenses of user_
 
-## Available Scripts
+- Powered by
+  ![N|Solid](https://d33wubrfki0l68.cloudfront.net/1e70457a60b0627de6ab966f1e0a40cf56f465f5/b4144/img/logo-speechly-colors.svg)
+  the best practices for handling speech input in a Speechly React app.
 
-In the project directory, you can run:
+Expens is a voice-automated app, for finacial assistance and managing of income, and expenses,
+ReactJS-powered App.
 
-### `npm start`
+-
+- ✨Welcome✨
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Voice automated expense history search
+- filtering and sorting transactions
+- financial assistance.
+- Graphic representation of data including charts
+-
 
-### `npm test`
+This project helped me in so many ways, i had a good understanding of using a
+voice interface API, and insight on other technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> It uses Context Api to provide data across the entire app
+> Along with useReducer hook to manage state.
+> as possible. The ultimate goal is to:
+> make it easy for user to View the optimal layout for the site depending on their device's screen size.
+> make the app user-friendly.
+> help user manage and track their expenses/income.
 
-### `npm run build`
+### Screenshot
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](./assets/images/expens2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Expens uses a number of open source projects to work properly:
 
-### `npm run eject`
+### Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- React Hooks
+- Context API
+- [React](https://reactjs.org/) - JS library
+- [Material UI](https://mui.com/) - React UI library
+- [Chart JS](https://chartjs.com/) - For graphic representation of data
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This project requires [Node.js](https://nodejs.org/) v10+ to run.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- clone the repo or download the zip file
+  Install the dependencies and devDependencies and start the server.
 
-## Learn More
+```sh
+cd expens
+npm install
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For production environments...
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+npm install --production
+npm start
+```
 
-### Code Splitting
+## Continued development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+As further implementation, i will like to add a user authentication and authenticate users, and store all user related data to a database, instead of using local storage to store data.
 
-### Analyzing the Bundle Size
+> Author: `--EBUKA Victor`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+MIT
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
