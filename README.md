@@ -3,8 +3,8 @@
 ## _A voice automated web app which helps to track and analyze income and expenses of user_
 
 - Powered by
-  ![N|Solid](https://d33wubrfki0l68.cloudfront.net/1e70457a60b0627de6ab966f1e0a40cf56f465f5/b4144/img/logo-speechly-colors.svg)
-  the best practices for handling speech input in a Speechly React app.
+- ![N|Solid](https://d33wubrfki0l68.cloudfront.net/1e70457a60b0627de6ab966f1e0a40cf56f465f5/b4144/img/logo-speechly-colors.svg)
+  > the best practices for handling speech input in a Speechly React app.
 
 Expens is a voice-automated app, for finacial assistance and managing of income, and expenses,
 ReactJS-powered App.
@@ -32,7 +32,7 @@ voice interface API, and insight on other technologies
 
 ### Screenshot
 
-![](./assets/images/expens2.png)
+![expenses](./expens2.png);
 
 ## Tech
 
