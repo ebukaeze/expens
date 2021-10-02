@@ -1,4 +1,4 @@
-const incomeColors = ["#d233ce", "#154731", "#165f40", "#16784f", "#14915f", "#10ac6e", "#123123", "#164d3e", "#1f333f"];
+const incomeColors = ["#d233ce", "#42f54e", "#425df5", "#16784f", "#14915f", "#10ac6e", "#123123", "#164d3e", "#1f333f"];
 const expenseColors = ["#b2cc43", "#b50d12", "#bf2f1f", "#c9452c", "#d3583a", "#dc6a48", "#e5758", "#e22dd4", "#fc1f11"];
 
 
