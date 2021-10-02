@@ -25,6 +25,7 @@ voice interface API, and insight on other technologies
 
 > It uses Context Api to provide data across the entire app
 > Along with useReducer hook to manage state.
+> Created custome hook as best fit to create reusable logic for filtering of data for the chartjs component
 > as possible. The ultimate goal is to:
 > make it easy for user to View the optimal layout for the site depending on their device's screen size.
 > make the app user-friendly.
@@ -32,7 +33,8 @@ voice interface API, and insight on other technologies
 
 ### Screenshot
 
-![expenses](./expens2.png);
+![expenses](./expense2.png);
+![expensem](./expensem.png);
 
 ## Tech
 
