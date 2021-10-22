@@ -1,6 +1,6 @@
 # Expens
 
-## _A voice automated web app which helps to track and analyze income and expenses of user_
+## _A voice automated web app which helps to track and analyze budgets of user_
 
 - Powered by
 - ![N|Solid](https://d33wubrfki0l68.cloudfront.net/1e70457a60b0627de6ab966f1e0a40cf56f465f5/b4144/img/logo-speechly-colors.svg)
@@ -20,7 +20,7 @@ ReactJS-powered App.
 - Graphic representation of data including charts
 -
 
-This project helped me in so many ways, i had a good understanding of using a
+This project helped me in so many ways, I had a good understanding of using a
 voice interface API, and insight on other technologies
 
 > It uses Context Api to provide data across the entire app
