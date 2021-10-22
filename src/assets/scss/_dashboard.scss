@@ -50,7 +50,7 @@
           color: $title-color;
         }
         .card__subtitle {
-          font-size: $h3-font-size;
+          font-size: 15px;
           color: $text-color-light;
         }
       }
@@ -69,6 +69,7 @@
       flex-direction: column;
       margin-left: 270px;
       margin-top: 50px;
+      height: max-content;
 
       &.grid {
         grid-template-columns: repeat(1, minmax(230px, 1fr));
