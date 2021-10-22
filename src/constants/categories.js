@@ -1,5 +1,5 @@
 const incomeColors = ["#d233ce", "#42f54e", "#425df5", "#16784f", "#14915f", "#10ac6e", "#123123", "#164d3e", "#1f333f"];
-const expenseColors = ["#b2cc43", "#b50d12", "#bf2f1f", "#c9452c", "#d3583a", "#dc6a48", "#e5758", "#e22dd4", "#fc1f11"];
+const expenseColors = ["#b2cc43", "#b50d12", "#bf2f1f", "#c9452c", "#d3583a", "#dc6a48", "#e5758", "#e22dd4", "#fc1f11", "#463edd", "#ae53df"];
 
 
 
@@ -27,6 +27,9 @@ export const expenseCategories = [
     { type: 'Shopping', amount: 0, color: expenseColors[6] },
     { type: 'Electronics', amount: 0, color: expenseColors[7] },
     { type: 'Other', amount: 0, color: expenseColors[8] },
+    { type: 'Phone', amount: 0, color: expenseColors[9] },
+    { type: 'Pets', amount: 0, color: expenseColors[10] },
+    { type: 'Entertainment', amount: 0, color: expenseColors[2] },
 
 ]
 
