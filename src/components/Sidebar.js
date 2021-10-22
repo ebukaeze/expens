@@ -29,9 +29,9 @@ function Sidebar() {
                <ul className="nav__list">
                    <li className="nav__item">
                        
-                           <i className="uil search-alt"><Unicons.UilSearch/></i>
-                          <input type="text" className={click ? "place active" : "place"} placeholder="search..." onClick={openContainer}/>
-                            <span className="tooltips">Search</span> 
+                           {/* <i className="uil search-alt"><Unicons.UilSearch/></i> */}
+                          <input type="text" className={click ? "place active" : "place"} placeholder="" onClick={openContainer}/>
+                            {/* <span className="tooltips">Search</span>  */}
 
                    </li>
                    <li className="nav__item">
@@ -49,21 +49,21 @@ function Sidebar() {
                        <span className="tooltips">Track Expense</span> 
                    </li>
                    <li className="nav__item">
-                       <Link to="/income" className="nav__link">
+                       <Link to="/expense" className="nav__link">
                            <i className="uil grid-alt"><Unicons.UilAnalytics/></i>
                            <span className="link__name">Track Income</span>
                        </Link>
                        <span className="tooltips">Track Income</span> 
                    </li>
-                   <li className="nav__item">
+                  {/*  <li className="nav__item">
                        <Link to="/" className="nav__link">
                            <i className="uil user-alt"><Unicons.UilUser/></i>
                            <span className="link__name">User</span>
                        </Link>
                        <span className="tooltips">User</span> 
-                   </li>
+                   </li> */}
                    <li className="nav__item">
-                       <Link to="/" className="nav__link">
+                       <Link to="/analytics" className="nav__link">
                            <i className="uil grid-alt"><Unicons.UilChart/></i>
                            <span className="link__name">Analytics</span>
                        </Link>
@@ -71,22 +71,22 @@ function Sidebar() {
                    </li>
                    
                     <li className="nav__item">
-                       <Link to="/" className="nav__link">
-                           <i className="uil grid-alt"><Unicons.UilSetting/></i>
-                           <span className="link__name">Setting</span>
+                       <Link to="/history" className="nav__link">
+                           <i className="uil grid-alt"><Unicons.UilBook/></i>
+                           <span className="link__name">History</span>
                        </Link>
-                       <span className="tooltips">Setting</span> 
+                       <span className="tooltips">History</span> 
                    </li>
                </ul>
                <div className="profile__content">
                    <div className="profile">
-                       <div className="profile__details">
+                      {/*  <div className="profile__details">
                              <img src={profile} alt="profile" className="user"/> 
                            <div className="name__job">
                                <h3 className="name">Ebuka Victor</h3>
                                <div className="job">web developer</div>
                            </div>
-                       </div>
+                       </div> */}
                        <i className="uil logout"><Unicons.UilSignout/></i>
                    </div>
                </div>

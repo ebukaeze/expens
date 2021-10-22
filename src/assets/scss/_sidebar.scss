@@ -260,16 +260,54 @@
 
 @media screen and (max-width: 900px) {
   .sidebar {
-    width: 89px;
-    left: -110px;
+    width: 85px;
+
+    .header .uil,
+    .logo__name,
+    .nav__item .link__name {
+      display: none;
+      transition: all 0.5s ease;
+    }
+    .sidebar__container .profile__content .profile__details .user,
+    .name__job {
+      display: none;
+    }
+    .logout {
+      display: block;
+      margin-left: -20%;
+    }
+    .place {
+      display: none;
+    }
+    .menu__icon {
+      display: none;
+      margin-left: -20px;
+    }
+
+    .menu__icon2 {
+      display: none;
+      margin-left: 60px;
+    }
+    .tooltips {
+      position: absolute;
+      display: block;
+      right: 122px;
+      margin-left: 210px;
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
     &.active {
       left: 0;
+      visibility: hidden;
 
       .menu__icon {
         display: none;
       }
       .menu__icon2 {
-        display: flex;
+        display: none;
         margin-left: 90px;
 
         &:hover {
@@ -282,6 +320,12 @@
     .menu__icon {
       display: none;
     }
+    .place {
+      margin-left: -77%;
+      max-width: 50px;
+      display: block;
+      white-space: nowrap;
+    }
   }
 }
 @media screen and (max-width: 900px) {
@@ -289,7 +333,7 @@
     .sidebar__container {
       .header {
         .menu__icon2 {
-          display: flex;
+          display: none;
           margin-left: 65px;
         }
       }
@@ -298,7 +342,7 @@
       .sidebar__container {
         .header {
           .menu__icon2 {
-            display: flex;
+            display: none;
             margin-left: 70px;
           }
         }
