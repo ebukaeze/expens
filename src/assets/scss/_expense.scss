@@ -5,6 +5,14 @@
   //justify-content: center;
   //align-items: center;
   margin-left: 40px;
+  .speech-btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -16,5 +24,13 @@
     margin-left: 80px;
     height: 100%;
     overflow-y: scroll;
+    .speech-btn {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }

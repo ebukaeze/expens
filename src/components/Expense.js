@@ -1,9 +1,12 @@
 import React, {useState} from 'react';
 import { Grid, AppBar, Toolbar, Typography, Button } from '@material-ui/core';
+import {PushToTalkButton, PushToTalkButtonContainer, ErrorPanel } from '@speechly/react-ui';
+
 import  MenuIcon  from '@material-ui/icons/Menu';
 import IconButton from '@material-ui/core/IconButton';
 import Details from './Details';
 import Main from './main/Main';
+
 
 import useStyles from '../styles';
 
@@ -28,12 +31,18 @@ function Expense() {
                <Main />
            </Grid>
            <Grid item xs={12} sm={3}>
-               <Details title="Expenses"/>
+               <Details title="Expense"/>
            </Grid>
         </Grid>
         </div>
-        
+       
         </section> 
+         <div className="speech-bt">
+            <PushToTalkButtonContainer >
+            <PushToTalkButton size='45px'/>
+            <ErrorPanel />
+        </PushToTalkButtonContainer>
+       </div>
         </>
        
     )

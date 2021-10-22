@@ -12,7 +12,13 @@ export default makeStyles((theme) => ({
         backgroundColor: "green",
         colorPrimary: "hsl(247, 69%, 61%)",
     },
-   
+   avatarIncome: {
+    backgroundColor: "green",
+},
+
+avatarExpense: {
+    backgroundColor: "red",
+},
 
     
 }));

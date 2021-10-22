@@ -4,6 +4,8 @@ import Dashboard from './components/Dashboard';
 import Expense from './components/Expense';
 import Income from './components/Income';
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import Analytics from './components/Analytics';
+import History from './components/History';
 
 function App() {
   return (
@@ -16,6 +18,9 @@ function App() {
         <Route path='/' exact component={Dashboard} />
         <Route path="/expense" component={Expense} />
         <Route path="/income"  component={Income} />
+        <Route path="/analytics" component={Analytics} />
+        <Route path="/history" component={History} />
+
         
 
         
